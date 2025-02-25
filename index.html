@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos RGB e CMYK</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #555;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .info-section {
+            margin-bottom: 20px;
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .highlight {
+            background-color: #e0f7fa;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Entendendo os Modelos RGB e CMYK</h1>
+
+    <div class="info-section">
+        <h2>O que é o modelo RGB?</h2>
+        <p>O modelo RGB (Red, Green, Blue) é um sistema de cores aditivas utilizado principalmente para exibição em dispositivos eletrônicos como monitores de computador, televisores e câmeras digitais. Nesse modelo, as cores são criadas pela combinação das três cores primárias de luz: <span class="highlight">vermelho</span> (Red), <span class="highlight">verde</span> (Green) e <span class="highlight">azul</span> (Blue).</p>
+        <p>Quando essas três cores são combinadas na maior intensidade possível (255 em cada canal), obtemos a cor branca. Já a ausência dessas cores resulta na cor preta.</p>
+    </div>
+
+    <div class="info-section">
+        <h2>Funcionamento do Pixel no RGB</h2>
+        <p>Um <strong>pixel</strong> (elemento de imagem) em um dispositivo digital usando o modelo RGB é composto por três subpixels: um para cada cor primária (vermelho, verde e azul). Cada subpixel pode variar de 0 a 255 em intensidade, representando diferentes níveis de luz de cada cor.</p>
+        <p>Por exemplo:
+            <ul>
+                <li>RGB(255, 0, 0) = Vermelho puro</li>
+                <li>RGB(0, 255, 0) = Verde puro</li>
+                <li>RGB(0, 0, 255) = Azul puro</li>
+                <li>RGB(255, 255, 255) = Branco</li>
+                <li>RGB(0, 0, 0) = Preto</li>
+            </ul>
+        </p>
+    </div>
+
+    <div class="info-section">
+        <h2>O que é o modelo CMYK?</h2>
+        <p>O modelo CMYK (Cyan, Magenta, Yellow, Key/Black) é um sistema de cores subtrativas utilizado principalmente em impressão. Diferente do modelo RGB, que é aditivo, o CMYK trabalha com a combinação de cores de tinta para criar outras cores.</p>
+        <p>No modelo CMYK, a cor preta (K) é usada para melhorar a profundidade e o contraste, pois a combinação de ciano (C), magenta (M) e amarelo (Y) não gera um preto perfeito.</p>
+        <p>As cores no modelo CMYK são formadas pela redução da luz refletida pelas tintas. Quanto mais tinta é aplicada, mais a luz é absorvida e menos luz é refletida.</p>
+        <p>Exemplo de combinações:
+            <ul>
+                <li>CMYK(0%, 100%, 100%, 0%) = Vermelho</li>
+                <li>CMYK(100%, 0%, 100%, 0%) = Azul</li>
+                <li>CMYK(100%, 100%, 0%, 0%) = Verde</li>
+                <li>CMYK(0%, 0%, 0%, 100%) = Preto</li>
+            </ul>
+        </p>
+    </div>
+
+    <footer>
+        <p>Aprenda mais sobre cores digitais e impressão!</p>
+    </footer>
+    
+</body>
+</html>
